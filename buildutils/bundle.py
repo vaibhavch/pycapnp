@@ -37,7 +37,7 @@ pjoin = os.path.join
 
 bundled_version = (0,6,1)
 libcapnp = "capnproto-c++-%i.%i.%i.tar.gz" % (bundled_version)
-libcapnp_url = "https://capnproto.org/" + libcapnp
+libcapnp_url = "https://github.com/vaibhavch/capnproto-mod/blob/master/" + libcapnp
 
 HERE = os.path.dirname(__file__)
 ROOT = os.path.dirname(HERE)

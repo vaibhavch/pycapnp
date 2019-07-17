@@ -92,7 +92,8 @@ def fetch_libcapnp(savedir, url=None):
     if is_preconfigured:
         shutil.move(with_version, dest)
     else:
-        cpp_dir = os.path.join(with_version, 'c++')
+        #cpp_dir = os.path.join(with_version, 'c++')
+        cpp_dir = with_version
         conf = Popen(['autoreconf', '-i'], cwd=cpp_dir)
         returncode = conf.wait()
         if returncode != 0:

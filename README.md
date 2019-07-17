@@ -20,6 +20,10 @@ Or you can clone the repo like so:
 Note: for OSX, if using clang from Xcode 5, you may need to set `CFLAGS` like so:
 
     CFLAGS='-stdlib=libc++' pip install pycapnp
+    
+ Install custom Build
+ 
+    sudo python setup.py install --libcapnp-url https://github.com/vaibhavch/capnproto-mod/raw/master/capnproto-c++-0.6.1.tar --force-bundled-libcapnp
 
 If you wish to install using the latest upstream C++ Cap'n Proto:
 
